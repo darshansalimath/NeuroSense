@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center mb-4">
+  <h2 class="fw-bold text-primary">Alzheimer’s EEG Prediction</h2>
+  <p class="text-muted">Enter EEG feature values to get a diagnosis.</p>
+</div>
+
+<form method="POST" class="row g-3 mb-4">
+  {% for col in features %}
+    <div class="col-md-3">
+      <label class="form-label">{{ col }}
+        <span class="text-muted" data-bs-toggle="tooltip" title="{{ explanation[col] }}">
+          <i class="fa-solid fa-circle-info"></i>
+        </span>
+      </label>
+      <input type="number" step="any" name="{{ col }}" class="form-control" value="{{ inputs[loop.index0] }}" required>
+    </div>
+  {% endfor %}
+  <div class="col-12 mt-3 text-center">
+    <button type="submit" class="btn btn-success btn-lg px-5">Predict</button>
+    
+  </div>
+</form>
+
+{% if prediction is not none %}
+<div class="text-center mb-4">
+  <h4>Prediction Result</h4>
+  <div class="alert {% if prediction==1 %} alert-warning {% else %} alert-success {% endif %} fs-5 fw-bold">
+    {% if prediction==1 %} Alzheimer’s Detected ⚠️ {% else %} No Alzheimer’s ✅ {% endif %}
+  </div>
+  <p>Model Confidence: <strong>{{ confidence }}%</strong></p>
+  <p>Class Weights → Healthy: {{ class_weights[0] }}, Alzheimer’s: {{ class_weights[1] }}</p>
+</div>
+
+<div id="plotDiv" class="mb-5"></div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script>
+  var plot_data = {{ plot_json | tojson }};
+  Plotly.newPlot('plotDiv', plot_data.data, plot_data.layout, {responsive:true});
+</script>
+{% endif %}
+
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el) })
+</script>
+
+{% endblock %}

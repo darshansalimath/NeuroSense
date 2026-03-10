@@ -1,0 +1,35 @@
+Machine and Deep Learning Trends in EEG-Based Detection and Diagnosis of Alzheimer’s Disease: A Systematic Review
+https://www.mdpi.com/2673-4117/5/3/78
+
+LEAD: Large Foundation Model for EEG-Based Alzheimer's Disease Detection
+https://arxiv.org/abs/2502.01678
+
+Early detection of Alzheimer's disease using deep learning methods,"May 12, 2025","Hybrid deep learning on multimodal data (clinical, biomarkers, neuroimaging) for improved early AD prediction.",PMC Article
+https://pmc.ncbi.nlm.nih.gov/articles/PMC12069014/
+
+A fine-tuned convolutional neural network model for accurate detection of Alzheimer's disease,"Apr 4, 2025",CNN fine-tuning on neuroimaging to address challenges in AD classification accuracy.,Nature Scientific Reports
+https://www.nature.com/articles/s41598-025-86635-2
+
+Artificial Intelligence Model for Alzheimer's Disease Detection with Convolutional Neural Networks,2023,CNN applied to MRI images for classifying AD patients vs. controls.,PubMed
+https://pubmed.ncbi.nlm.nih.gov/36970908/
+
+A novel interpreted deep network for Alzheimer's disease prediction using MRI scans,"Aug 15, 2025","CNN framework on MRI for interpretable AD identification, emphasizing explainability.",Nature Scientific Reports
+https://www.nature.com/articles/s41598-025-15007-7
+
+AI-based tool for early detection of Alzheimer's disease,"Apr 30, 2024",VGG16 transfer learning on hippocampus-focused MRI for early AD detection.,ScienceDirect
+https://www.sciencedirect.com/science/article/pii/S2405844024054069
+
+Application of artificial neural network model in diagnosis of Alzheimer's disease,"Jul 8, 2019",ANN for early warning and diagnosis using clinical data.,BMC Neurology
+https://bmcneurol.biomedcentral.com/articles/10.1186/s12883-019-1377-4
+
+Detection of Alzheimer's disease using deep learning models: A systematic literature review (2024) analyzes 45 studies on DL algorithms, including ANN and CNN for AD stages and preprocessing techniques.
+https://www.sciencedirect.com/science/article/pii/S2352914824001072
+
+Detecting Alzheimer's Using ANN
+https://digitalcommons.calpoly.edu/eesp/587/
+
+Alzheimer’s disease detection using deep learning and machine learning: a review
+https://link.springer.com/article/10.1007/s10462-025-11258-y
+
+Identification of Alzheimer's disease using a convolutional neural network model based on T1-weighted magnetic resonance imaging
+https://www.nature.com/articles/s41598-020-79243-9

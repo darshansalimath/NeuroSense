@@ -1,0 +1,48 @@
+# ===========================
+# Large Data Files (>100MB GitHub limit)
+# ===========================
+AD_all_patients.csv
+cleaned.csv
+
+# ===========================
+# Personal / Non-project files
+# ===========================
+Darshan_Salimath_Resume.html
+4.2.0
+
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+venv/
+env/
+.env
+
+# ===========================
+# Jupyter Notebook
+# ===========================
+.ipynb_checkpoints/
+
+# ===========================
+# IDE / Editor
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===========================
+# OS files
+# ===========================
+desktop.ini

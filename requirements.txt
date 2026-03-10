@@ -1,0 +1,13 @@
+numpy
+pandas
+seaborn
+mne
+trimesh
+plotly
+matplotlib
+scipy
+scikit-learn
+tensorflow
+joblib
+flask
+requests
